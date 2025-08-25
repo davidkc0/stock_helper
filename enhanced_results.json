@@ -1,0 +1,212 @@
+[
+  {
+    "symbol": "TQQQ",
+    "strategy": "PUT_CREDIT_SPREAD",
+    "expiration": "2025-10-03",
+    "legs": [
+      {
+        "side": "SELL",
+        "type": "PUT",
+        "strike": 78.0,
+        "exp": "2025-10-03",
+        "qty": 2
+      },
+      {
+        "side": "BUY",
+        "type": "PUT",
+        "strike": 75.0,
+        "exp": "2025-10-03",
+        "qty": 2
+      }
+    ],
+    "credit": 53.49999999999999,
+    "max_risk": 146.5,
+    "breakevens": [
+      77.465
+    ],
+    "est_pop": 0.8176701851931809,
+    "kelly_size": 2,
+    "max_profit_pct": 0.36518771331058014,
+    "days_to_exp": 38,
+    "liquidity_score": 0.6897345246719793,
+    "iv_rank_score": 0.5,
+    "regime_score": 0.8,
+    "risk_reward_score": 0.7303754266211603,
+    "final_score": 67.4021990258628,
+    "total_delta": -0.3646596296136382,
+    "total_gamma": 0.03117981315622444,
+    "total_theta": -0.11359316632420387,
+    "total_vega": 0.15435696788267114,
+    "notes": "PCS targeting -0.22\u0394 short put. Kelly size: 2. TP: 50% | Stop: 2.0x",
+    "market_context": "IV Rank: 50.0% | Regime: RANGING",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "symbol": "SBUX",
+    "strategy": "PUT_CREDIT_SPREAD",
+    "expiration": "2025-10-03",
+    "legs": [
+      {
+        "side": "SELL",
+        "type": "PUT",
+        "strike": 81.0,
+        "exp": "2025-10-03",
+        "qty": 2
+      },
+      {
+        "side": "BUY",
+        "type": "PUT",
+        "strike": 78.0,
+        "exp": "2025-10-03",
+        "qty": 2
+      }
+    ],
+    "credit": 49.5,
+    "max_risk": 150.5,
+    "breakevens": [
+      80.505
+    ],
+    "est_pop": 0.7856377894263167,
+    "kelly_size": 2,
+    "max_profit_pct": 0.3289036544850498,
+    "days_to_exp": 38,
+    "liquidity_score": 0.7435407203818892,
+    "iv_rank_score": 0.5,
+    "regime_score": 0.8,
+    "risk_reward_score": 0.6578073089700996,
+    "final_score": 67.02696058703978,
+    "total_delta": -0.42872442114736664,
+    "total_gamma": 0.07493011469448056,
+    "total_theta": -0.05495829015416408,
+    "total_vega": 0.1623302486032513,
+    "notes": "PCS targeting -0.22\u0394 short put. Kelly size: 2. TP: 50% | Stop: 2.0x",
+    "market_context": "IV Rank: 50.0% | Regime: RANGING",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "symbol": "AMZN",
+    "strategy": "PUT_CREDIT_SPREAD",
+    "expiration": "2025-10-03",
+    "legs": [
+      {
+        "side": "SELL",
+        "type": "PUT",
+        "strike": 215.0,
+        "exp": "2025-10-03",
+        "qty": 1
+      },
+      {
+        "side": "BUY",
+        "type": "PUT",
+        "strike": 210.0,
+        "exp": "2025-10-03",
+        "qty": 1
+      }
+    ],
+    "credit": 83.0,
+    "max_risk": 417.0,
+    "breakevens": [
+      214.17
+    ],
+    "est_pop": 0.7987169763830665,
+    "kelly_size": 1,
+    "max_profit_pct": 0.19904076738609114,
+    "days_to_exp": 38,
+    "liquidity_score": 0.9828593559150356,
+    "iv_rank_score": 0.5,
+    "regime_score": 0.8,
+    "risk_reward_score": 0.3980815347721823,
+    "final_score": 66.61881781374436,
+    "total_delta": -0.2012830236169335,
+    "total_gamma": 0.015079347017092092,
+    "total_theta": -0.06298258872607009,
+    "total_vega": 0.20707964276827703,
+    "notes": "PCS targeting -0.22\u0394 short put. Kelly size: 1. TP: 50% | Stop: 2.0x",
+    "market_context": "IV Rank: 50.0% | Regime: RANGING",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "symbol": "TSLA",
+    "strategy": "PUT_CREDIT_SPREAD",
+    "expiration": "2025-10-03",
+    "legs": [
+      {
+        "side": "SELL",
+        "type": "PUT",
+        "strike": 300.0,
+        "exp": "2025-10-03",
+        "qty": 1
+      },
+      {
+        "side": "BUY",
+        "type": "PUT",
+        "strike": 295.0,
+        "exp": "2025-10-03",
+        "qty": 1
+      }
+    ],
+    "credit": 77.50000000000003,
+    "max_risk": 422.5,
+    "breakevens": [
+      299.225
+    ],
+    "est_pop": 0.8458693178022929,
+    "kelly_size": 1,
+    "max_profit_pct": 0.18343195266272197,
+    "days_to_exp": 38,
+    "liquidity_score": 0.9899131629298925,
+    "iv_rank_score": 0.5,
+    "regime_score": 0.8,
+    "risk_reward_score": 0.36686390532544394,
+    "final_score": 66.13554136510673,
+    "total_delta": -0.1541306821977071,
+    "total_gamma": 0.004225319490298584,
+    "total_theta": -0.16830653604500911,
+    "total_vega": 0.26618736960715966,
+    "notes": "PCS targeting -0.22\u0394 short put. Kelly size: 1. TP: 50% | Stop: 2.0x",
+    "market_context": "IV Rank: 50.0% | Regime: RANGING",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "symbol": "NVDA",
+    "strategy": "PUT_CREDIT_SPREAD",
+    "expiration": "2025-10-03",
+    "legs": [
+      {
+        "side": "SELL",
+        "type": "PUT",
+        "strike": 160.0,
+        "exp": "2025-10-03",
+        "qty": 1
+      },
+      {
+        "side": "BUY",
+        "type": "PUT",
+        "strike": 155.0,
+        "exp": "2025-10-03",
+        "qty": 1
+      }
+    ],
+    "credit": 76.49999999999997,
+    "max_risk": 423.5,
+    "breakevens": [
+      159.235
+    ],
+    "est_pop": 0.8310500750549936,
+    "kelly_size": 1,
+    "max_profit_pct": 0.18063754427390785,
+    "days_to_exp": 38,
+    "liquidity_score": 0.9927658827658828,
+    "iv_rank_score": 0.5,
+    "regime_score": 0.8,
+    "risk_reward_score": 0.3612750885478157,
+    "final_score": 66.08081942627398,
+    "total_delta": -0.16894992494500638,
+    "total_gamma": 0.009736390090027892,
+    "total_theta": -0.08177996503320908,
+    "total_vega": 0.14704609457820447,
+    "notes": "PCS targeting -0.22\u0394 short put. Kelly size: 1. TP: 50% | Stop: 2.0x",
+    "market_context": "IV Rank: 50.0% | Regime: RANGING",
+    "risk_level": "MEDIUM"
+  }
+]

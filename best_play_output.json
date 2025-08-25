@@ -1,0 +1,149 @@
+[
+  {
+    "symbol": "META",
+    "strategy": "CONDOR",
+    "expiration": "2025-10-03",
+    "legs": [
+      {
+        "side": "SELL",
+        "type": "CALL",
+        "strike": 815.0,
+        "exp": "2025-10-03",
+        "qty": 1
+      },
+      {
+        "side": "BUY",
+        "type": "CALL",
+        "strike": 820.0,
+        "exp": "2025-10-03",
+        "qty": 1
+      },
+      {
+        "side": "SELL",
+        "type": "PUT",
+        "strike": 710.0,
+        "exp": "2025-10-03",
+        "qty": 1
+      },
+      {
+        "side": "BUY",
+        "type": "PUT",
+        "strike": 705.0,
+        "exp": "2025-10-03",
+        "qty": 1
+      }
+    ],
+    "credit": 195.00000000000003,
+    "max_risk": 305.0,
+    "est_pop": 0.7880981377320146,
+    "qty": 1,
+    "score": 1025.9556373892426,
+    "notes": "Range play. Width $5. TP +50%, stop 2.0x credit.",
+    "_telemetry": {
+      "price": 755.5645141601562,
+      "atrp": 2.2455303744540527,
+      "rsi": 46.99526433089834,
+      "sma20": 759.0472229003906,
+      "sma50": 730.8541882324218,
+      "hvr": 89.13043478260869
+    }
+  },
+  {
+    "symbol": "KO",
+    "strategy": "CONDOR",
+    "expiration": "2025-10-03",
+    "legs": [
+      {
+        "side": "SELL",
+        "type": "CALL",
+        "strike": 72.0,
+        "exp": "2025-10-03",
+        "qty": 3
+      },
+      {
+        "side": "BUY",
+        "type": "CALL",
+        "strike": 74.0,
+        "exp": "2025-10-03",
+        "qty": 3
+      },
+      {
+        "side": "SELL",
+        "type": "PUT",
+        "strike": 67.0,
+        "exp": "2025-10-03",
+        "qty": 3
+      },
+      {
+        "side": "BUY",
+        "type": "PUT",
+        "strike": 64.0,
+        "exp": "2025-10-03",
+        "qty": 3
+      }
+    ],
+    "credit": 68.0,
+    "max_risk": 132.0,
+    "est_pop": 0.7547023519013129,
+    "qty": 3,
+    "score": 733.770957720568,
+    "notes": "Range play. Width $2. TP +50%, stop 2.0x credit.",
+    "_telemetry": {
+      "price": 69.24500274658203,
+      "atrp": 1.4353795904390263,
+      "rsi": 51.34205025197186,
+      "sma20": 69.72774963378906,
+      "sma50": 69.83969955444336,
+      "hvr": 57.826086956521735
+    }
+  },
+  {
+    "symbol": "AMD",
+    "strategy": "CONDOR",
+    "expiration": "2025-10-03",
+    "legs": [
+      {
+        "side": "SELL",
+        "type": "CALL",
+        "strike": 185.0,
+        "exp": "2025-10-03",
+        "qty": 1
+      },
+      {
+        "side": "BUY",
+        "type": "CALL",
+        "strike": 190.0,
+        "exp": "2025-10-03",
+        "qty": 1
+      },
+      {
+        "side": "SELL",
+        "type": "PUT",
+        "strike": 149.0,
+        "exp": "2025-10-03",
+        "qty": 1
+      },
+      {
+        "side": "BUY",
+        "type": "PUT",
+        "strike": 144.0,
+        "exp": "2025-10-03",
+        "qty": 1
+      }
+    ],
+    "credit": 164.0,
+    "max_risk": 336.0,
+    "est_pop": 0.7855952674475036,
+    "qty": 1,
+    "score": 727.4550110951565,
+    "notes": "Range play. Width $5. TP +50%, stop 2.0x credit.",
+    "_telemetry": {
+      "price": 163.7220001220703,
+      "atrp": 4.9186159705527235,
+      "rsi": 41.4953071165949,
+      "sma20": 172.87609786987304,
+      "sma50": 155.7820394897461,
+      "hvr": 76.95652173913044
+    }
+  }
+]

@@ -1,0 +1,289 @@
+# Enhanced Options Trading Configuration (Relaxed Filters)
+# ======================================================
+# This configuration file controls all aspects of the options trading strategy analyzer
+
+# Basic Account and Portfolio Settings
+# ===================================
+tickers:
+  # Major ETFs - Most Liquid Options
+  - SPY    # S&P 500 ETF - most liquid options
+  - QQQ    # Nasdaq 100 ETF - tech-heavy
+  - IWM    # Russell 2000 ETF - small caps
+  - TLT    # 20+ Year Treasury Bond ETF - bonds
+  - VTI    # Vanguard Total Stock Market ETF
+  - VOO    # Vanguard S&P 500 ETF
+  - VEA    # Vanguard FTSE Developed Markets ETF
+  - VWO    # Vanguard FTSE Emerging Markets ETF
+  - XLF    # Financial Select Sector SPDR ETF
+  - XLE    # Energy Select Sector SPDR ETF
+  - XLK    # Technology Select Sector SPDR ETF
+  - XLV    # Health Care Select Sector SPDR ETF
+  - XLI    # Industrial Select Sector SPDR ETF
+  - XLP    # Consumer Staples Select Sector SPDR ETF
+  - XLY    # Consumer Discretionary Select Sector SPDR ETF
+  - XLU    # Utilities Select Sector SPDR ETF
+  - XLB    # Materials Select Sector SPDR ETF
+  - XLC    # Communication Services Select Sector SPDR ETF
+  - XLF    # Real Estate Select Sector SPDR ETF
+  - TQQQ   # ProShares UltraPro QQQ (3x leveraged)
+  - SQQQ   # ProShares UltraPro Short QQQ (3x inverse)
+  - UVXY   # ProShares Ultra VIX Short-Term Futures ETF
+  - VXX    # iPath Series B S&P 500 VIX Short-Term Futures ETN
+  
+  # Mega Cap Tech (S&P 500 Top 10)
+  - AAPL   # Apple Inc - largest market cap
+  - MSFT   # Microsoft Corp - second largest
+  - GOOGL  # Alphabet Inc Class A - Google
+  - GOOG   # Alphabet Inc Class C - Google
+  - AMZN   # Amazon.com Inc
+  - NVDA   # NVIDIA Corp - AI/semiconductor leader
+  - META   # Meta Platforms - Facebook/Instagram
+  - TSLA   # Tesla Inc - electric vehicles
+  - BRK.B  # Berkshire Hathaway Inc Class B
+  - UNH    # UnitedHealth Group Inc
+  
+  # Large Cap Tech & Growth
+  - AMD    # Advanced Micro Devices - semiconductor
+  - CRM    # Salesforce Inc - cloud software
+  - ADBE   # Adobe Inc - creative software
+  - NFLX   # Netflix Inc - streaming
+  - PYPL   # PayPal Holdings - fintech
+  - INTC   # Intel Corp - semiconductor
+  - CSCO   # Cisco Systems Inc - networking
+  - ORCL   # Oracle Corp - database software
+  - IBM    # International Business Machines Corp
+  - QCOM   # QUALCOMM Inc - semiconductor
+  
+  # Financial Services
+  - JPM    # JPMorgan Chase & Co - largest bank
+  - BAC    # Bank of America Corp
+  - WFC    # Wells Fargo & Co
+  - GS     # Goldman Sachs Group Inc
+  - MS     # Morgan Stanley
+  - C      # Citigroup Inc
+  - AXP    # American Express Co
+  - V      # Visa Inc - payment processing
+  - MA     # Mastercard Inc - payment processing
+  - BLK    # BlackRock Inc - asset management
+  
+  # Healthcare & Pharma
+  - JNJ    # Johnson & Johnson - healthcare conglomerate
+  - PFE    # Pfizer Inc - pharmaceutical
+  - ABBV   # AbbVie Inc - pharmaceutical
+  - UNH    # UnitedHealth Group Inc - health insurance
+  - ABT    # Abbott Laboratories - medical devices
+  - TMO    # Thermo Fisher Scientific Inc - life sciences
+  - DHR    # Danaher Corp - life sciences
+  - BMY    # Bristol-Myers Squibb Co - pharmaceutical
+  - AMGN   # Amgen Inc - biotechnology
+  - GILD   # Gilead Sciences Inc - biotechnology
+  
+  # Consumer & Retail
+  - KO     # Coca-Cola Co - beverages
+  - PG     # Procter & Gamble Co - consumer goods
+  - WMT    # Walmart Inc - retail
+  - HD     # Home Depot Inc - home improvement
+  - MCD    # McDonald's Corp - fast food
+  - DIS    # Walt Disney Co - entertainment
+  - NKE    # Nike Inc - athletic apparel
+  - SBUX   # Starbucks Corp - coffee
+  - TGT    # Target Corp - retail
+  - COST   # Costco Wholesale Corp - warehouse club
+  
+  # Energy & Industrial
+  - XOM    # Exxon Mobil Corp - oil & gas
+  - CVX    # Chevron Corp - oil & gas
+  - COP    # ConocoPhillips - oil & gas
+  - EOG    # EOG Resources Inc - oil & gas
+  - BA     # Boeing Co - aerospace
+  - CAT    # Caterpillar Inc - construction equipment
+  - GE     # General Electric Co - industrial
+  - UPS    # United Parcel Service Inc - logistics
+  - FDX    # FedEx Corp - logistics
+  - RTX    # Raytheon Technologies Corp - aerospace
+  
+  # Communication & Media
+  - CMCSA  # Comcast Corp - cable/media
+  - VZ     # Verizon Communications Inc - telecom
+  - T      # AT&T Inc - telecom
+  - CHTR   # Charter Communications Inc - cable
+  - TMUS   # T-Mobile US Inc - telecom
+  - PARA   # Paramount Global - media
+  - WBD    # Warner Bros Discovery Inc - media
+  - FOX    # Fox Corp - media
+  - NWSA   # News Corp Class A - media
+  - NWS    # News Corp Class B - media
+  
+  # Real Estate & Utilities
+  - PLD    # Prologis Inc - industrial REIT
+  - AMT    # American Tower Corp - cell tower REIT
+  - EQIX   # Equinix Inc - data center REIT
+  - CCI    # Crown Castle Inc - cell tower REIT
+  - DUK    # Duke Energy Corp - utility
+  - SO     # Southern Co - utility
+  - D      # Dominion Energy Inc - utility
+  - NEE    # NextEra Energy Inc - renewable utility
+  - EXC    # Exelon Corp - utility
+  - XEL    # Xcel Energy Inc - utility
+  
+  # Materials & Chemicals
+  - LIN    # Linde PLC - industrial gases
+  - APD    # Air Products & Chemicals Inc - industrial gases
+  - FCX    # Freeport-McMoRan Inc - copper mining
+  - NEM    # Newmont Corp - gold mining
+  - DD     # DuPont de Nemours Inc - chemicals
+  - DOW    # Dow Inc - chemicals
+  - ECL    # Ecolab Inc - water treatment
+  - SHW    # Sherwin-Williams Co - paints
+  - BLL    # Ball Corp - packaging
+  - VMC    # Vulcan Materials Co - construction materials
+
+account_size: 42000.0
+# Total account value in dollars - used for position sizing calculations
+# Affects maximum risk per trade and collateral requirements
+
+max_risk_per_trade_pct: 1.0
+# Maximum percentage of account to risk on any single trade (1% = $420)
+# For spreads/condors, this is the maximum loss if trade goes against you
+
+max_collateral_pct: 40.0
+# Maximum percentage of account to use as collateral for cash-secured puts
+# 40% = $16,800 maximum collateral across all CSP positions
+
+max_total_allocation_pct: 60.0
+# Maximum percentage of account allocated to all options positions combined
+# 60% = $25,200 maximum total allocation across all strategies
+
+# Strategy Selection Parameters
+# ============================
+dte_min: 30
+# Minimum Days To Expiration - only consider options expiring 30+ days out
+# Longer DTE gives more time for trade to work out, reduces gamma risk
+
+dte_max: 60
+# Maximum Days To Expiration - only consider options expiring within 60 days
+# Shorter DTE captures more theta decay, reduces time value risk
+
+target_short_delta: 0.22
+# Target delta for short options (0.22 = 22 delta)
+# Lower delta = higher probability of profit, lower credit received
+# 0.22 is a balanced approach (roughly 22% probability of being in-the-money)
+
+delta_band: 0.08
+# Acceptable range around target delta (±0.08)
+# Allows flexibility in strike selection while maintaining risk profile
+# 0.22 ± 0.08 = acceptable range of 0.14 to 0.30 delta
+
+spread_width_low: 2.0
+# Width of spreads for stocks priced under $100 (in dollars)
+# $2 width = $200 max risk per spread
+
+spread_width_high: 5.0
+# Width of spreads for stocks priced $100+ (in dollars)
+# $5 width = $500 max risk per spread
+
+# Liquidity and Quality Filters
+# ============================
+max_bid_ask_pct: 1.0
+# Maximum bid/ask spread as percentage of mid price (100% = very wide spreads allowed)
+# Lower values = tighter spreads = better liquidity = easier to enter/exit
+# 1.0 allows wide spreads (relaxed for more opportunities)
+
+min_open_interest: 1
+# Minimum open interest required for option contracts
+# Higher OI = more liquid = easier to trade
+# 1 = any OI > 0 (very relaxed)
+
+min_volume: 10
+# Minimum daily volume required for option contracts
+# Higher volume = more active trading = better pricing
+# 10 = minimum volume requirement (relaxed)
+
+min_option_price: 0.01
+# Minimum option price in dollars (avoids penny options)
+# Very low options may have poor liquidity or pricing issues
+# 0.01 = $0.01 minimum (very relaxed)
+
+# Volatility Analysis Settings
+# ===========================
+iv_rank_lookback_days: 252
+# Number of trading days to look back for IV rank calculation
+# 252 = one full trading year (standard for IV rank)
+
+high_iv_threshold: 0.6
+# IV rank threshold above which to favor premium-selling strategies
+# 0.6 = 60th percentile - when IV is high, sell premium
+
+low_iv_threshold: 0.3
+# IV rank threshold below which to favor premium-buying strategies
+# 0.3 = 30th percentile - when IV is low, buy premium
+
+# Market Regime Detection
+# ======================
+trend_sma_periods: [20, 50, 100]
+# Simple Moving Average periods for trend analysis
+# 20-day = short-term trend, 50-day = medium-term, 100-day = long-term
+# Used to determine if market is trending or ranging
+
+volatility_regime_threshold: 1.5
+# ATR multiplier to determine volatility regime
+# Current ATR vs historical average to classify market volatility
+# 1.5 = 50% above average = high volatility regime
+
+# Risk Management Parameters
+# =========================
+risk_free_rate: 0.045
+# Current risk-free interest rate (4.5% = typical for current environment)
+# Used in Black-Scholes calculations for option pricing
+
+take_profit_pct: 0.50
+# Take profit at 50% of maximum profit
+# Close winning trades when 50% of potential profit is achieved
+# Balances profit-taking with letting winners run
+
+stop_loss_mult: 2.0
+# Stop loss at 2.0x the credit received
+# If loss reaches 2x the premium collected, close the trade
+# Prevents small losses from becoming large losses
+
+kelly_fraction: 0.25
+# Kelly criterion multiplier for position sizing
+# 0.25 = use 25% of Kelly criterion recommendation
+# Conservative approach to position sizing
+
+# Output and Performance Settings
+# ==============================
+max_ideas: 5
+# Maximum number of trading ideas to display
+# Top 5 scoring opportunities will be shown
+
+skip_earnings_within_days: 7
+# Avoid trades on stocks with earnings within 7 days
+# Earnings can cause large price moves and IV changes
+# Reduces earnings-related risk
+
+# Data Provider Configuration
+# ==========================
+provider: "yfinance"
+# Data source for market data (yfinance = free, delayed data)
+# Alternatives: polygon, tradier (require API keys)
+
+polygon_api_key: null
+# API key for Polygon.io data (if using polygon provider)
+# null = not using polygon
+
+tradier_access_token: null
+# Access token for Tradier data (if using tradier provider)
+# null = not using tradier
+
+# Performance Settings
+# ===================
+use_concurrent: false
+# Use parallel processing to analyze multiple symbols simultaneously
+# Set to false to avoid rate limiting with yfinance API
+# Sequential processing is slower but safer
+
+max_workers: 1
+# Maximum number of parallel workers for concurrent processing
+# Set to 1 when use_concurrent is false
+# 1 worker = analyze 1 symbol at a time (safer for rate limits)

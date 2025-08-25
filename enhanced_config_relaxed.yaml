@@ -1,0 +1,61 @@
+# Enhanced Options Trading Configuration (Relaxed Filters)
+# =====================================================
+
+# Basic settings
+tickers:
+  - SPY
+  - QQQ
+  - AAPL
+  - MSFT
+  - TSLA
+  - NVDA
+  - META
+  - AMD
+  - GOOGL
+  - AMZN
+
+account_size: 42000.0
+max_risk_per_trade_pct: 1.0
+max_collateral_pct: 40.0
+max_total_allocation_pct: 60.0
+
+# Strategy parameters
+dte_min: 30
+dte_max: 60
+target_short_delta: 0.20
+delta_band: 0.08  # Relaxed from 0.05
+spread_width_low: 2.0
+spread_width_high: 5.0
+
+# Relaxed liquidity filters
+max_bid_ask_pct: 0.50  # Relaxed from 0.25
+min_open_interest: 50  # Relaxed from 100
+min_volume: 10         # Relaxed from 50
+min_option_price: 0.05 # Relaxed from 0.10
+
+# IV Rank settings
+iv_rank_lookback_days: 252
+high_iv_threshold: 0.6
+low_iv_threshold: 0.3
+
+# Market regime settings
+trend_sma_periods: [20, 50, 100]
+volatility_regime_threshold: 1.5
+
+# Risk management
+risk_free_rate: 0.045
+take_profit_pct: 0.50
+stop_loss_mult: 2.5
+kelly_fraction: 0.25
+
+# Output settings
+max_ideas: 5
+skip_earnings_within_days: 10
+
+# Provider settings
+provider: "yfinance"
+polygon_api_key: null
+tradier_access_token: null
+use_concurrent: true
+max_workers: 4
+
