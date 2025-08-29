@@ -1,211 +1,286 @@
 [
   {
-    "symbol": "TQQQ",
-    "strategy": "PUT_CREDIT_SPREAD",
-    "expiration": "2025-10-03",
+    "symbol": "SPY",
+    "strategy": "IRON_CONDOR",
+    "expiration": "2025-10-17",
     "legs": [
       {
         "side": "SELL",
         "type": "PUT",
-        "strike": 78.0,
-        "exp": "2025-10-03",
-        "qty": 2
+        "strike": 610.0,
+        "exp": "2025-10-17",
+        "qty": 1
       },
       {
         "side": "BUY",
         "type": "PUT",
-        "strike": 75.0,
-        "exp": "2025-10-03",
-        "qty": 2
+        "strike": 605.0,
+        "exp": "2025-10-17",
+        "qty": 1
+      },
+      {
+        "side": "SELL",
+        "type": "CALL",
+        "strike": 665.0,
+        "exp": "2025-10-17",
+        "qty": 1
+      },
+      {
+        "side": "BUY",
+        "type": "CALL",
+        "strike": 670.0,
+        "exp": "2025-10-17",
+        "qty": 1
       }
     ],
-    "credit": 53.49999999999999,
-    "max_risk": 146.5,
+    "credit": 173.0,
+    "max_risk": 327.0,
     "breakevens": [
-      77.465
+      608.27,
+      666.73
     ],
-    "est_pop": 0.8176701851931809,
-    "kelly_size": 2,
-    "max_profit_pct": 0.36518771331058014,
-    "days_to_exp": 38,
-    "liquidity_score": 0.6897345246719793,
+    "est_pop": 0.5688943765123228,
+    "kelly_size": 1,
+    "max_profit_pct": 0.5290519877675841,
+    "days_to_exp": 47,
+    "liquidity_score": 0.9982982801489005,
     "iv_rank_score": 0.5,
-    "regime_score": 0.8,
-    "risk_reward_score": 0.7303754266211603,
-    "final_score": 67.4021990258628,
-    "total_delta": -0.3646596296136382,
-    "total_gamma": 0.03117981315622444,
-    "total_theta": -0.11359316632420387,
-    "total_vega": 0.15435696788267114,
-    "notes": "PCS targeting -0.22\u0394 short put. Kelly size: 2. TP: 50% | Stop: 2.0x",
+    "regime_score": 0.4,
+    "risk_reward_score": 1,
+    "final_score": 66.965965602978,
+    "total_delta": 0.043911594575282265,
+    "total_gamma": 0.002116044822533157,
+    "total_theta": -0.023783639572695622,
+    "total_vega": 0.15704815082658052,
+    "notes": "IC expecting price to stay between $608.27 and $666.73. High IV, range-bound strategy. TP: 50%",
     "market_context": "IV Rank: 50.0% | Regime: RANGING",
     "risk_level": "MEDIUM"
   },
   {
-    "symbol": "SBUX",
-    "strategy": "PUT_CREDIT_SPREAD",
-    "expiration": "2025-10-03",
+    "symbol": "NVDA",
+    "strategy": "IRON_CONDOR",
+    "expiration": "2025-10-17",
     "legs": [
       {
         "side": "SELL",
         "type": "PUT",
-        "strike": 81.0,
-        "exp": "2025-10-03",
-        "qty": 2
+        "strike": 155.0,
+        "exp": "2025-10-17",
+        "qty": 1
       },
       {
         "side": "BUY",
         "type": "PUT",
-        "strike": 78.0,
-        "exp": "2025-10-03",
-        "qty": 2
+        "strike": 150.0,
+        "exp": "2025-10-17",
+        "qty": 1
+      },
+      {
+        "side": "SELL",
+        "type": "CALL",
+        "strike": 190.0,
+        "exp": "2025-10-17",
+        "qty": 1
+      },
+      {
+        "side": "BUY",
+        "type": "CALL",
+        "strike": 195.0,
+        "exp": "2025-10-17",
+        "qty": 1
       }
     ],
-    "credit": 49.5,
-    "max_risk": 150.5,
+    "credit": 179.5,
+    "max_risk": 320.5,
     "breakevens": [
-      80.505
+      153.205,
+      191.795
     ],
-    "est_pop": 0.7856377894263167,
-    "kelly_size": 2,
-    "max_profit_pct": 0.3289036544850498,
-    "days_to_exp": 38,
-    "liquidity_score": 0.7435407203818892,
+    "est_pop": 0.5553791390111084,
+    "kelly_size": 1,
+    "max_profit_pct": 0.5600624024960998,
+    "days_to_exp": 47,
+    "liquidity_score": 0.9957785714778542,
     "iv_rank_score": 0.5,
-    "regime_score": 0.8,
-    "risk_reward_score": 0.6578073089700996,
-    "final_score": 67.02696058703978,
-    "total_delta": -0.42872442114736664,
-    "total_gamma": 0.07493011469448056,
-    "total_theta": -0.05495829015416408,
-    "total_vega": 0.1623302486032513,
-    "notes": "PCS targeting -0.22\u0394 short put. Kelly size: 2. TP: 50% | Stop: 2.0x",
+    "regime_score": 0.4,
+    "risk_reward_score": 1,
+    "final_score": 66.91557142955709,
+    "total_delta": 0.02289185836768859,
+    "total_gamma": 0.004379454497093909,
+    "total_theta": -0.021842944418782123,
+    "total_vega": 0.06043329272035328,
+    "notes": "IC expecting price to stay between $153.21 and $191.79. High IV, range-bound strategy. TP: 50%",
     "market_context": "IV Rank: 50.0% | Regime: RANGING",
     "risk_level": "MEDIUM"
   },
   {
-    "symbol": "AMZN",
-    "strategy": "PUT_CREDIT_SPREAD",
-    "expiration": "2025-10-03",
+    "symbol": "AMD",
+    "strategy": "IRON_CONDOR",
+    "expiration": "2025-10-17",
+    "legs": [
+      {
+        "side": "SELL",
+        "type": "PUT",
+        "strike": 145.0,
+        "exp": "2025-10-17",
+        "qty": 1
+      },
+      {
+        "side": "BUY",
+        "type": "PUT",
+        "strike": 140.0,
+        "exp": "2025-10-17",
+        "qty": 1
+      },
+      {
+        "side": "SELL",
+        "type": "CALL",
+        "strike": 180.0,
+        "exp": "2025-10-17",
+        "qty": 1
+      },
+      {
+        "side": "BUY",
+        "type": "CALL",
+        "strike": 185.0,
+        "exp": "2025-10-17",
+        "qty": 1
+      }
+    ],
+    "credit": 190.99999999999997,
+    "max_risk": 309.0,
+    "breakevens": [
+      143.09,
+      181.91
+    ],
+    "est_pop": 0.519229862608049,
+    "kelly_size": 1,
+    "max_profit_pct": 0.6181229773462782,
+    "days_to_exp": 47,
+    "liquidity_score": 0.9942551904857893,
+    "iv_rank_score": 0.5,
+    "regime_score": 0.4,
+    "risk_reward_score": 1,
+    "final_score": 66.8851038097158,
+    "total_delta": 0.011321847123031303,
+    "total_gamma": 0.003762530077762156,
+    "total_theta": -0.020753000228367832,
+    "total_vega": 0.05121504254304948,
+    "notes": "IC expecting price to stay between $143.09 and $181.91. High IV, range-bound strategy. TP: 50%",
+    "market_context": "IV Rank: 50.0% | Regime: RANGING",
+    "risk_level": "MEDIUM"
+  },
+  {
+    "symbol": "AAPL",
+    "strategy": "IRON_CONDOR",
+    "expiration": "2025-10-17",
     "legs": [
       {
         "side": "SELL",
         "type": "PUT",
         "strike": 215.0,
-        "exp": "2025-10-03",
+        "exp": "2025-10-17",
         "qty": 1
       },
       {
         "side": "BUY",
         "type": "PUT",
         "strike": 210.0,
-        "exp": "2025-10-03",
+        "exp": "2025-10-17",
+        "qty": 1
+      },
+      {
+        "side": "SELL",
+        "type": "CALL",
+        "strike": 245.0,
+        "exp": "2025-10-17",
+        "qty": 1
+      },
+      {
+        "side": "BUY",
+        "type": "CALL",
+        "strike": 250.0,
+        "exp": "2025-10-17",
         "qty": 1
       }
     ],
-    "credit": 83.0,
-    "max_risk": 417.0,
+    "credit": 180.0,
+    "max_risk": 320.0,
     "breakevens": [
-      214.17
+      213.2,
+      246.8
     ],
-    "est_pop": 0.7987169763830665,
+    "est_pop": 0.5418089299658687,
     "kelly_size": 1,
-    "max_profit_pct": 0.19904076738609114,
-    "days_to_exp": 38,
-    "liquidity_score": 0.9828593559150356,
+    "max_profit_pct": 0.5625,
+    "days_to_exp": 47,
+    "liquidity_score": 0.9936989515702709,
     "iv_rank_score": 0.5,
-    "regime_score": 0.8,
-    "risk_reward_score": 0.3980815347721823,
-    "final_score": 66.61881781374436,
-    "total_delta": -0.2012830236169335,
-    "total_gamma": 0.015079347017092092,
-    "total_theta": -0.06298258872607009,
-    "total_vega": 0.20707964276827703,
-    "notes": "PCS targeting -0.22\u0394 short put. Kelly size: 1. TP: 50% | Stop: 2.0x",
+    "regime_score": 0.4,
+    "risk_reward_score": 1,
+    "final_score": 66.87397903140541,
+    "total_delta": 0.042131356468101844,
+    "total_gamma": 0.005540626128150339,
+    "total_theta": -0.0219458685470958,
+    "total_vega": 0.09016729274954491,
+    "notes": "IC expecting price to stay between $213.20 and $246.80. High IV, range-bound strategy. TP: 50%",
     "market_context": "IV Rank: 50.0% | Regime: RANGING",
     "risk_level": "MEDIUM"
   },
   {
     "symbol": "TSLA",
-    "strategy": "PUT_CREDIT_SPREAD",
-    "expiration": "2025-10-03",
+    "strategy": "IRON_CONDOR",
+    "expiration": "2025-10-17",
     "legs": [
       {
         "side": "SELL",
         "type": "PUT",
-        "strike": 300.0,
-        "exp": "2025-10-03",
+        "strike": 285.0,
+        "exp": "2025-10-17",
         "qty": 1
       },
       {
         "side": "BUY",
         "type": "PUT",
-        "strike": 295.0,
-        "exp": "2025-10-03",
+        "strike": 280.0,
+        "exp": "2025-10-17",
         "qty": 1
-      }
-    ],
-    "credit": 77.50000000000003,
-    "max_risk": 422.5,
-    "breakevens": [
-      299.225
-    ],
-    "est_pop": 0.8458693178022929,
-    "kelly_size": 1,
-    "max_profit_pct": 0.18343195266272197,
-    "days_to_exp": 38,
-    "liquidity_score": 0.9899131629298925,
-    "iv_rank_score": 0.5,
-    "regime_score": 0.8,
-    "risk_reward_score": 0.36686390532544394,
-    "final_score": 66.13554136510673,
-    "total_delta": -0.1541306821977071,
-    "total_gamma": 0.004225319490298584,
-    "total_theta": -0.16830653604500911,
-    "total_vega": 0.26618736960715966,
-    "notes": "PCS targeting -0.22\u0394 short put. Kelly size: 1. TP: 50% | Stop: 2.0x",
-    "market_context": "IV Rank: 50.0% | Regime: RANGING",
-    "risk_level": "MEDIUM"
-  },
-  {
-    "symbol": "NVDA",
-    "strategy": "PUT_CREDIT_SPREAD",
-    "expiration": "2025-10-03",
-    "legs": [
+      },
       {
         "side": "SELL",
-        "type": "PUT",
-        "strike": 160.0,
-        "exp": "2025-10-03",
+        "type": "CALL",
+        "strike": 375.0,
+        "exp": "2025-10-17",
         "qty": 1
       },
       {
         "side": "BUY",
-        "type": "PUT",
-        "strike": 155.0,
-        "exp": "2025-10-03",
+        "type": "CALL",
+        "strike": 380.0,
+        "exp": "2025-10-17",
         "qty": 1
       }
     ],
-    "credit": 76.49999999999997,
-    "max_risk": 423.5,
+    "credit": 172.50000000000014,
+    "max_risk": 327.4999999999999,
     "breakevens": [
-      159.235
+      283.275,
+      376.725
     ],
-    "est_pop": 0.8310500750549936,
+    "est_pop": 0.5523981288513116,
     "kelly_size": 1,
-    "max_profit_pct": 0.18063754427390785,
-    "days_to_exp": 38,
-    "liquidity_score": 0.9927658827658828,
+    "max_profit_pct": 0.526717557251909,
+    "days_to_exp": 47,
+    "liquidity_score": 0.9935755959699182,
     "iv_rank_score": 0.5,
-    "regime_score": 0.8,
-    "risk_reward_score": 0.3612750885478157,
-    "final_score": 66.08081942627398,
-    "total_delta": -0.16894992494500638,
-    "total_gamma": 0.009736390090027892,
-    "total_theta": -0.08177996503320908,
-    "total_vega": 0.14704609457820447,
-    "notes": "PCS targeting -0.22\u0394 short put. Kelly size: 1. TP: 50% | Stop: 2.0x",
+    "regime_score": 0.4,
+    "risk_reward_score": 1,
+    "final_score": 66.87151191939837,
+    "total_delta": 0.004762844114946985,
+    "total_gamma": 0.0006790143031992972,
+    "total_theta": -0.017377505130139026,
+    "total_vega": 0.041222820249676106,
+    "notes": "IC expecting price to stay between $283.27 and $376.73. High IV, range-bound strategy. TP: 50%",
     "market_context": "IV Rank: 50.0% | Regime: RANGING",
     "risk_level": "MEDIUM"
   }
